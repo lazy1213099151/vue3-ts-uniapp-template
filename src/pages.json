@@ -1,0 +1,97 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/AudioTab/AudioTab",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/ImageTab/ImageTab",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/VideoTab/VideoTab",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/UserTab/UserTab",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "sub_packages/Users",
+			"pages": [
+				{
+					"path": "pages/EditUserInfo/EditUserInfo",
+                    "style": {
+                        "navigationStyle": "custom"
+                    }
+				}
+			]
+		},
+		{
+			"root": "sub_packages/Commons",
+			"pages": [
+				{
+					"path": "FormInput/FormInput",
+                    "style": {
+                        "navigationStyle": "custom"
+                    }
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "首页",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+        "color": "#ccc",
+        "selectedColor": "#2d2d2d",
+        "borderStyle": "black",
+        "backgroundColor": "#fefefe",
+        "iconWidth": "18px",
+        "list": [
+            {
+                "pagePath": "pages/AudioTab/AudioTab",
+                "text": "坤曲",
+                "iconPath": "static/icons/坤曲图标-default.png",
+                "selectedIconPath": "static/icons/坤曲图标-active.png"
+            },
+			{
+                "pagePath": "pages/ImageTab/ImageTab",
+                "text": "坤图",
+                "iconPath": "static/icons/坤图图标-default.png",
+                "selectedIconPath": "static/icons/坤图图标-active.png"
+            },
+			{
+                "pagePath": "pages/VideoTab/VideoTab",
+                "text": "坤视",
+                "iconPath": "static/icons/坤视图标-default.png",
+                "selectedIconPath": "static/icons/坤视图标-active.png"
+            },
+			{
+                "pagePath": "pages/UserTab/UserTab",
+                "text": "我的",
+                "iconPath": "static/icons/我的图标-default.png",
+                "selectedIconPath": "static/icons/我的图标-active.png"
+            }
+        ]
+    }
+}
